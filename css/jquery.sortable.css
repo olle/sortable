@@ -1,0 +1,34 @@
+.sortable {
+	width: auto; 
+}
+
+.sortable li {
+	padding: 3px 0;
+}
+
+.sorting {
+	float: right;
+}
+
+button.up, button.down {
+	margin: 0;
+	padding: 0;
+	width: 23px;
+	height: 20px;
+	border: none;
+	vertical-align: middle;	
+}
+
+button.up {
+	background: url(../img/up_passive.png) left top no-repeat;
+}
+button.up:hover {
+	background: url(../img/up_normal.png) left top no-repeat;
+}
+
+button.down {
+	background: url(../img/down_passive.png) left top no-repeat;
+}
+button.down:hover {
+	background: url(../img/down_normal.png) left top no-repeat;
+}

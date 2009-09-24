@@ -1,0 +1,57 @@
+a img {
+    border: none;
+}
+
+body {
+    background: #ccc url(../img/bg_radial_top.png) 50% 0 no-repeat;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #444;
+}
+
+code, pre {
+    font-family: Andale Mono, Monaco, Courier, monospace;
+    font-size: .9em;
+    color: #ab3f0c;
+}
+
+pre {
+	font-size: 13px;
+	color: #000;
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+h1, h2, h3 {
+    text-shadow: #fff 0px 1px 1px;
+}
+
+em {
+	color: #666;
+}
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.example {
+    font-family: Times;
+    color: #000;
+    background: #fff;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.example ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px;
+}
