@@ -56,7 +56,8 @@ $items = loadDb();
 			</div>
 			<p>
 				You can get sorted yourself, the code is <b>free</b> and
-				available on GitHub at <a href="#"></a>
+				available on GitHub at 
+				<a href="http://github.com/olle/sortable">http://github.com/olle/sortable</a>.				
 			</p>
 			<h2>How it works</h2>
 			<p>
