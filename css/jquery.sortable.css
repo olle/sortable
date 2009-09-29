@@ -20,15 +20,15 @@ button.up, button.down {
 }
 
 button.up {
-	background: url(../img/up_passive.png) left top no-repeat;
+	background: url(../img/jquery.sortable.png) 0px 0px no-repeat;
 }
 button.up:hover {
-	background: url(../img/up_normal.png) left top no-repeat;
+	background: url(../img/jquery.sortable.png) 0px -20px no-repeat;
 }
 
 button.down {
-	background: url(../img/down_passive.png) left top no-repeat;
+	background: url(../img/jquery.sortable.png) 0px -40px no-repeat;
 }
 button.down:hover {
-	background: url(../img/down_normal.png) left top no-repeat;
+	background: url(../img/jquery.sortable.png) 0px -60px no-repeat;
 }
