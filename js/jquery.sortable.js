@@ -64,7 +64,7 @@
 				.css({opacity : 0});	
 	};
 	$.fn.sortable.sort = function (ev, el, direction) {
-		ev.preventDefault();
+		ev.stopPropagation();
 		$.ajax({
 			type : 'POST',
 			url : settings.handler,
