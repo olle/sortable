@@ -25,9 +25,8 @@
  * @since   2009-09-24
  */
 (function ($) {
-	var settings = {};
 	$.fn.sortable = function (options) {
-		settings = $.extend({}, {
+		$(this).get(0).settings = $.extend({}, {
 				handler : 'php/jquery.sortable.php',
 				upClass : 'up',
 				downClass : 'down',
@@ -39,20 +38,20 @@
 	};
 	$.fn.sortable.init = function (list) {
 		$(list).find('li').each(function () {
-			$(this).append('<span class="' + settings.sorterClass + '"><button class="' + settings.upClass + '" /><button class="' + settings.downClass + '" /></span>');
-			$.fn.sortable.bind(this);
+			$(this).append('<span class="' + list.settings.sorterClass + '"><button class="' + list.settings.upClass + '" /><button class="' + list.settings.downClass + '" /></span>');
+			$.fn.sortable.bind(this, list);
 		});
 	};
-	$.fn.sortable.bind = function (listItem) {
+	$.fn.sortable.bind = function (listItem, list) {
 		$(listItem)
 				.find('button.up')
 				.click(function (ev) {
-					$.fn.sortable.sort(ev, listItem, 'up');					
+					$.fn.sortable.sort(ev, listItem, 'up', list);					
 				})
 				.parent()
 				.find('button.down')
 				.click(function (ev) {
-					$.fn.sortable.sort(ev, listItem, 'down');	
+					$.fn.sortable.sort(ev, listItem, 'down', list);	
 				})
 				.parent()
 				.parent()
@@ -63,11 +62,11 @@
 				.find('button')
 				.css({opacity : 0});	
 	};
-	$.fn.sortable.sort = function (ev, el, direction) {
+	$.fn.sortable.sort = function (ev, el, direction, list) {
 		ev.stopPropagation();
 		$.ajax({
 			type : 'POST',
-			url : settings.handler,
+			url : list.settings.handler,
 			data : {id : $(el).attr('id'), direction : direction},
 			success : function () {
 				if (direction === 'up') {
