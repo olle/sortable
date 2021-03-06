@@ -1,6 +1,21 @@
+# Sortable
+
+A jQuery plugin that enables sorting for UL and OL elements. It adds sorting
+buttons to the list elements and integrates to a server backend by using Ajax
+POST.
+
+## Getting started
+
+To try out the built in example, simply get the project source code and put it
+in a PHP-enabled web root, or point to the project folder with your LAMP/MAMP
+program, and you're ready to go.
+
+Made with the hope of being of use to someone out there!
+
+```
  * The MIT License
- * 
- * Copyright (c) 2009 Olle Törnström studiomediatech.com
+ *
+ * Copyright (c) 2009-2021 Olle Törnström studiomediatech.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -11,7 +26,7 @@
  *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -23,14 +38,4 @@
  * @author  Olle Törnström olle[at]studiomediatech[dot]com
  * @created 2009-09-24
  * @file    README sortable
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
- Sortable is a jQuery plugin that enables sorting for UL and OL elements. It
- adds sorting buttons to the list elements and integrates to a server backend
- by using Ajax POST.
-
- To try out the built in example, simply get the project source code and put it 
- in a PHP-enabled web root, or point to the project folder with your LAMP/MAMP
- program, and you're ready to go.
-
- Made with the hope of being of use to someone out there!
+```
